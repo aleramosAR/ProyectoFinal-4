@@ -1,0 +1,31 @@
+{{#if mensajes.length}}
+  <ul class="mensajes">
+    {{#each mensajes}}
+      <li>
+        {{#if ../admin}}
+          <p><strong class="text-uppercase">{{this.username}}</strong> <span>{{this.fecha}}</span></p>
+          <p class="txt">{{this.pregunta}}</p>
+          {{#unless this.respondidos}}
+            <a class="btn btn-primary btn-sm mt-2"href="/chat/responder/{{this._id}}">Responder</a>
+          {{/unless }}
+        {{else}}
+          <p class="txt mb-1"><strong class="text-uppercase">{{this.username}}</strong> <span>{{this.createdAt}}{{this.fecha}}</span></p>
+          <p>{{this.pregunta}}</p>
+          {{#if this.respuesta}}
+            <p class="text-muted">{{this.respuesta}}</p>
+          {{else}}
+            <p class="text-muted" style="font-size: 0.8em;;">Esperando respuesta del admin...</p>
+          {{/if}}  
+        {{/if}}
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <div class="nomensajes">
+    {{#if admin}}
+      No hay consultas para contestar.
+    {{else}}
+      No hay mensajes
+    {{/if}}  
+  </div>
+{{/if}}

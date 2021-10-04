@@ -1,0 +1,18 @@
+<style>
+	html, body { height: 100%; } body { display: flex; flex-direction: column; }
+	header { position: absolute; } .container { flex: 1; } .cover-container {
+	align-items: center; max-width: 700px; } .botones { display: flex;
+	flex-direction: row; justify-content: space-around; max-width: 400px; margin:
+	auto; }
+  .imagen { border-radius: 2em 2em 0 0; }
+</style>
+<div class='cover-container d-flex h-100 p-3 mx-auto flex-column text-center'>
+	<img src='../assets/tienda.jpg' class='img-fluid imagen' />
+	<main role='main' class='inner cover bg-light p-4' style='width: 100%; border-bottom: 0.75em solid #EEE;'>
+		<h2 class='cover-heading mb-3'>Bienvenido a la tienda online</h2>
+		<div class='botones'>
+			<a href='/login' class='btn btn-success'>Ya tengo una cuenta</a>
+			<a href='/register' class='btn btn-info'>Soy un usuario nuevo</a>
+		</div>
+	</main>
+</div>

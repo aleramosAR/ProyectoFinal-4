@@ -1,0 +1,40 @@
+{{> menu admin=admin}}
+{{> userdata}}
+<a href="/productos" class="btn btn-primary btn-sm mb-2">◄ Volver al listado de productos</a>
+<br /><br />
+<h3 class="mb-5">Detalle de producto</h3>
+<div class="container mt-5 mb-5">
+  <div class="d-flex justify-content-center row">
+    <div class="col-md-8">
+      <div class="row p-2 bg-white border rounded">
+        <div class="col-md-3 mt-1">
+          <img class="img-fluid img-responsive rounded product-image" src="/img/{{producto.foto}}" alt={{producto.nombre}}>
+        </div>
+        <div class="col-md-6 mt-1">
+          <h5>{{producto.nombre}}</h5>
+          <p class="mt-1 mb-1 spec-1">{{producto.descripcion}}</p>
+          <p class="card-text small mb-2">
+            <strong>ID:</strong> {{producto._id}}<br />
+            <strong>Código:</strong> {{producto.codigo}}<br />
+            <strong>Stock:</strong> {{producto.stock}}<br />
+            <strong>Categoría:</strong> {{producto.categoria}}
+          </p>
+        </div>
+        <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+          <div class="d-flex flex-row align-items-center">
+            <h4 class="mr-1">${{producto.precio}}</h4>
+          </div>
+          <h6 class="text-success">Envio gratis</h6>
+          <div class="d-flex flex-column mt-4">
+            {{#if admin}}
+              <button class="btn btn-sm btn-primary mb-1" onclick="location.href = '/productos/actualizar/{{producto._id}}'">Actualizar</button>
+              <button class="btn btn-sm btn-danger mb-1" onclick="return clickDelete('{{producto._id}}')">Eliminar</button>
+            {{else}}
+              <button class="btn btn-sm btn-success" onclick="return clickAgregarCarrito('{{producto._id}}')">Agregar al Carrito</button>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

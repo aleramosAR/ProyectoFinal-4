@@ -1,0 +1,27 @@
+{{> menu admin=admin}}
+{{> userdata}}
+<h3 class="mb-3">Mis ordenes</h3>
+
+{{#if ordenes.length}}
+  <div class="mb-5">
+    {{#each ordenes}}
+      <div class="card mb-3" style="width: 100%;">
+        <div class="card-body">
+        <h5 class="card-title mb-3">N° de orden: {{this.nro}}</h5>
+        {{#each productos}}
+          <p class="mb-1 text-secondary"><strong>{{this.nombre}}</strong></p>
+          <p class="card-text small mb-2">
+            <strong>• Precio:</strong> {{this.precio}} &nbsp; <strong>• Cantidad:</strong> {{this.cantidad}} &nbsp; <strong>• Codigo:</strong> {{this.codigo}}
+          </p>
+          <hr />
+        {{/each}}
+        <h6>Total: <span class="text-success">${{this.total}}</span></h6>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+{{else}}
+	<div class="alert alert-danger mb-5">
+		<strong>No tienes aun ordenes registradas.</strong>
+	</div>
+{{/if}}

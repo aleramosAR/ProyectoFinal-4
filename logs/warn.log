@@ -1,0 +1,82 @@
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"error","message":"Hubo un error inicializando el servidor: Error: listen EADDRINUSE: address already in use :::8080"}
+{"level":"error","message":"Error grabando al usuario juan"}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"error","message":"bad auth : Authentication failed."}
+{"level":"error","message":"bad auth : Authentication failed."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"La password no coincide."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"La password no coincide."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"La password no coincide."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"warn","message":"La password no coincide."}
+{"level":"warn","message":"La password no coincide."}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Password invalido"}
+{"level":"warn","message":"La password no coincide."}
+{"level":"warn","message":"El usuario ya existe."}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"warn","message":"La password no coincide."}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"El password no coincide."}
+{"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/"}
+{"level":"error","message":"Se ha producido un error: TypeError: Cannot read property 'checked' of undefined"}
+{"level":"error","message":"Se ha producido un error: TypeError: Cannot read property 'checked' of undefined"}
+{"level":"error","message":"Se ha producido un error: TypeError: Cannot read property 'checked' of undefined"}
+{"level":"warn","message":"El password no coincide."}
+{"level":"warn","message":"Password invalido"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"MONGO_URI is not defined"}
+{"level":"error","message":"connectSocket is not defined"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"warn","message":"Usuario no encontrado"}
+{"level":"error","message":"s is not defined"}
+{"level":"error","message":"s is not defined"}
+{"level":"error","message":"s is not defined"}
+{"level":"error","message":"s is not defined"}
+{"level":"error","message":"s is not defined"}
+{"level":"error","message":"s is not defined"}

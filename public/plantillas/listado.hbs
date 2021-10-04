@@ -1,0 +1,43 @@
+{{#if productos.productos.length}}
+  <div class="productos-list mb-5">
+    {{#each productos.productos}}
+      <div class="card" style="width: 100%;">
+        <a href="/images/{{this._id}}" class="card-link" target="_blank">
+          <img src="/img/{{this.foto}}" class="card-img-top" alt={{this.nombre}} />
+          <p class="text-light bg-dark mb-0" style="font-size: 0.8em; padding: 0.2rem 1.25rem;">Click para ampliar foto</p>
+        </a>
+        <div class="card-body">
+          <h5 class="card-title mb-0">{{this.nombre}}</h5>
+          <p class="card-text mb-1">{{this.descripcion}}</p>
+          <p class="card-text small mb-2">
+            <strong>Código:</strong> {{this.codigo}}<br />
+            <strong>Stock:</strong> {{this.stock}}<br />
+            <strong>Categoría:</strong> {{this.categoria}}
+          </p>
+          <p class="card-text text-info"><strong>$ {{this.precio}}</strong></p>
+          <a class="btn btn-sm btn-secondary mb-3 btn-block" href="/productos/{{this._id}}">Ver detalle</a>
+          {{#if ../admin}}
+            <div class="btn-group mb-1" role="group">
+              <button class="btn btn-sm btn-primary" onclick="location.href = 'productos/actualizar/{{this._id}}'">Actualizar</button>
+              <button class="btn btn-sm btn-danger" onclick="return clickDelete('{{this._id}}')">Eliminar</button>
+            </div>
+          {{else}}
+            <div class="input-group">
+              <input type="number" name="cantidad" id="cn_{{this._id}}" class="form-control form-control-sm text-center" value="1" min="1" />
+              {{log}}
+              <span class="input-group-btn">
+                <button class="btn btn-sm btn-success btn-block"
+                onclick="return clickAgregarCarrito('{{this._id}}', document.getElementById('cn_{{this._id}}').value)"
+                >+ Comprar</button>
+              </span>
+            </div>
+          {{/if}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+{{else}}
+	<div class="alert alert-danger mb-5">
+		<strong>No hay productos que coincidan con su búsqueda!</strong>
+	</div>
+{{/if}}

@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-sm bg-success navbar-dark mb-3">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link text-light" href='/productos'>PRODUCTOS</a>
+    </li>
+    {{#if admin}}
+      <li class="nav-item">
+        <a class="nav-link text-light" href='/productos/nuevo'>CREAR PRODUCTO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href='/chat'>CONTESTAR CONSULTAS</a>
+      </li>
+    {{else}}
+      <li class="nav-item">
+        <a class="nav-link text-light" href='/carrito'>CARRITO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href='/chat'>PREGUNTAS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href='/ordenes/{{user._id}}'>MIS ORDENES</a>
+      </li>
+    {{/if}}
+  </ul>
+</nav>

@@ -1,0 +1,21 @@
+{{> menu admin=admin}}
+{{> userdata}}
+<a href="/chat" class="btn btn-primary btn-sm mb-2">◄ Volver al listado de mensajes</a>
+<br /><br />
+<h3 class="mb-3">Responder a la consulta</h3>
+<form onSubmit="return addRespuesta(this)" class="mb-5">
+  <div class="card mb-4">
+    <div class="card-body">
+      {{pregunta.pregunta}}<br /><span class="text-muted text-uppercase">({{pregunta.username}})</span>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-7">
+      <input type="text" name=="texto" id="texto" class="form-control" placeholder="Ingresa la respuesta..." />
+    </div>
+    <div class="col-2">
+      <input type="submit" class="btn btn-primary col-12" value="Enviar" />
+    </div>
+  </div>
+  <input id="respondiendo" name="respondiendo" type="hidden" value="{{pregunta._id}}">
+</form>

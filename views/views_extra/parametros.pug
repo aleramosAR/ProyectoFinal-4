@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title='Tienda online de deportes'
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', crossorigin="anonymous")
+    link(rel='stylesheet', integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO")
+  body
+    header(class="navbar navbar-expand-lg navbar-light text-light bg-dark mb-2")
+      div(class="container justify-content-between")
+        h1(class="navbar-brand h1 mb-0 text-light")='Tienda online de deportes'
+    main(class="container mb-5")
+      div(class=['col-md-8 col-lg-8 mx-auto mt-5'])
+        div(class='card')
+          div(class='card-body')
+            h5(class='card-title mb-4')='Parámetros de la app'
+            ul(class='list-group')
+              li(class='list-group-item' style='white-space:pre;')
+                | Environment actual:
+                |
+                strong #{parametros.ENVIRONMENT}
+              li(class='list-group-item' style='white-space:pre;')
+                | Tiempo de sesión 
+                em (en segundos):
+                |
+                |
+                strong #{parametros.TIEMPOSESION}
+              li(class='list-group-item' style='white-space:pre;')
+                | Puerto:
+                |
+                strong #{parametros.PORT}
+              li(class='list-group-item' style='white-space:pre;')
+                | URL Base:
+                |
+                strong #{parametros.URL_BASE}
+              li(class='list-group-item' style='whitespace: pre-wrap')
+                | URL de Base de Datos:
+                |
+                strong #{parametros.MONGO_URI}
+              li(class='list-group-item' style='white-space:pre;')
+                | E-mail del administrador:
+                |
+                strong #{parametros.ADMIN_EMAIL}
+              li(class='list-group-item' style='white-space:pre;')
+                | Datos de email Ethereal:
+                | Usuario: 
+                strong #{parametros.ETHEREAL_USER}
+                |
+                | Clave: 
+                strong #{parametros.ETHEREAL_PASS}

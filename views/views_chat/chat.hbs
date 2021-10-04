@@ -1,0 +1,18 @@
+{{> menu admin=admin}}
+{{> userdata}}
+<div class="d-flex justify-content-between align-items-start">
+  <h3 class="mb-3">Centro de ayuda</h3>
+</div>
+<div id="mensajes"></div>
+  {{#unless admin}}
+    <form onSubmit="return addMensaje(this)" class="mb-5">
+      <div class="form-row">
+        <div class="col-7">
+          <input type="text" name=="texto" id="texto" class="form-control" placeholder="Ingresa un texto..." />
+        </div>
+        <div class="col-2">
+          <input type="submit" class="btn btn-primary col-12" value="Enviar" />
+         </div>
+      </div>
+    </form>
+  {{/unless}}

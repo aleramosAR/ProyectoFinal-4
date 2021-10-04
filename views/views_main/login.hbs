@@ -1,0 +1,27 @@
+<div class="col-md-8 col-lg-5 mx-auto mt-5">
+  <form class="form" action="/login" method="post" role="form" autocomplete="off">
+    <a href="/" class="btn btn-primary btn-sm mb-2">◄ Volver al inicio</a>
+    <fieldset class="card">
+      <div class="card-header bg-success text-light">Ingresa tus datos</div>
+      <div class="card-body">
+        {{#if message}}
+          <div class="alert alert-danger mt-3" role="alert">
+            {{message}}
+          </div>
+        {{/if}}
+        <div class="mb-3">
+          <label for="username" class="form-label">Nombre</label>
+          <input type="text" name="username" id="username" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" name="password" id="password" class="form-control" required />
+        </div>
+        <button class="btn btn-success btn-lg float-right mt-3">Ingresar</button>
+      </div>
+    </fieldset>
+  </form>
+  <div class="alert alert-secondary mt-3 text-right" role="alert">
+    Si no esta registrado aun <a href="/register">crea un usuario</a>
+  </div>
+</div>
